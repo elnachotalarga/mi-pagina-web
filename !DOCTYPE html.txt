@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dieta Equilibrada Interactiva</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #e8f5e9);
+      color: #2c3e50;
+    }
+    header {
+      background: #4caf50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+    nav {
+      background: #2e7d32;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+      padding: 10px 15px;
+      border-radius: 20px;
+      background: #43a047;
+    }
+    nav a:hover {
+      transform: scale(1.1);
+      background: #1b5e20;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    section {
+      margin-bottom: 40px;
+      padding: 25px;
+      border-left: 8px solid #4caf50;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px 5px;
+      background: #66bb6a;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #388e3c;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      background: #388e3c;
+      color: white;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+  <script>
+    function quizAnswer(correct) {
+      if (correct) {
+        alert("¡Correcto! Elegiste una opción saludable.");
+      } else {
+        alert("No es la mejor opción. Intenta de nuevo con alimentos naturales.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Dieta Equilibrada e Interactiva</h1>
+    <p>Educación alimentaria, soluciones locales y participación ciudadana</p>
+  </header>
+
+  <nav>
+    <a href="#importancia">Importancia</a>
+    <a href="#problemas">Problemas</a>
+    <a href="#soluciones">Soluciones</a>
+    <a href="#acciones">Acciones Locales</a>
+    <a href="#recetas">Recetas</a>
+    <a href="#juego">Juego</a>
+    <a href="#talleres">Talleres</a>
+    <a href="#huertos">Huertos Escolares</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <section id="importancia">
+      <h2>Importancia del consumo responsable</h2>
+      <p>El consumo responsable ayuda a cuidar la salud personal, el medio ambiente y fomenta prácticas sostenibles. Elegir alimentos locales y de temporada contribuye al desarrollo de economías más justas.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Healthy_food.jpg" alt="Alimentos saludables">
+    </section>
+
+    <section id="problemas">
+      <h2>Problemas detectados</h2>
+      <ul>
+        <li>Dificultades económicas para acceder a comida sana</li>
+        <li>Falta de tiempo para cocinar</li>
+        <li>Publicidad engañosa</li>
+        <li>Falta de educación alimentaria</li>
+        <li>Preferencia por alimentos ultraprocesados</li>
+      </ul>
+    </section>
+
+    <section id="soluciones">
+      <h2>¿Qué se está haciendo para solucionarlos?</h2>
+      <p>Desde instituciones y colectivos se están desarrollando:</p>
+      <ol>
+        <li>Campañas educativas sobre alimentación saludable</li>
+        <li>Políticas públicas para fomentar producción local</li>
+        <li>Apps de nutrición y etiquetado claro de productos</li>
+        <li>Responsabilidad empresarial en publicidad infantil</li>
+      </ol>
+    </section>
+
+    <section id="acciones">
+      <h2>¿Qué haríamos nosotros para mejorar el entorno?</h2>
+      <p>Algunas propuestas desde lo local:</p>
+      <ul>
+        <li>Organizar talleres en colegios y centros comunitarios</li>
+        <li>Fomentar huertos urbanos y escolares</li>
+        <li>Crear campañas visuales en redes sociales</li>
+        <li>Incentivar menús saludables en bares y comedores</li>
+        <li>Formar alianzas con productores locales</li>
+      </ul>
+    </section>
+
+    <section id="recetas">
+      <h2>Recetas saludables</h2>
+      <ul>
+        <li>Wrap vegetal con hummus y espinacas</li>
+        <li>Crema de calabaza sin nata</li>
+        <li>Bol de arroz integral con tofu y brócoli</li>
+        <li>Galletas caseras de avena y plátano</li>
+      </ul>
+      <a href="#" class="btn">Descargar recetario completo</a>
+    </section>
+
+    <section id="juego">
+      <h2>Juego interactivo: ¿Cuál eliges?</h2>
+      <p>Selecciona el alimento más saludable:</p>
+      <button onclick="quizAnswer(true)" class="btn">🍎 Manzana</button>
+      <button onclick="quizAnswer(false)" class="btn">🍔 Hamburguesa</button>
+      <button onclick="quizAnswer(false)" class="btn">🥤 Refresco</button>
+    </section>
+
+    <section id="talleres">
+      <h2>Talleres y actividades</h2>
+      <p>Proponemos sesiones interactivas con:</p>
+      <ul>
+        <li>Charlas con nutricionistas</li>
+        <li>Demostraciones de cocina en vivo</li>
+        <li>Concursos de recetas saludables</li>
+        <li>Material educativo para alumnos y familias</li>
+      </ul>
+    </section>
+
+    <section id="huertos">
+      <h2>Huertos escolares</h2>
+      <p>Los huertos escolares ayudan a los niños a entender de dónde vienen los alimentos, cómo se cultivan y fomentan una alimentación consciente desde pequeños.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/School_garden.jpg/800px-School_garden.jpg" alt="Huerto escolar">
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto y participación</h2>
+      <p>¿Quieres formar parte del proyecto? Escríbenos:</p>
+      <form onsubmit="alert('¡Gracias por contactarnos!'); return false;">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Enviar" class="btn">
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Proyecto Dieta Equilibrada | Desarrollado para educación y concienciación</p>
+  </footer>
+</body>
+</html>
